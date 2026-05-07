@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Flowchart Login System" id="0">
+    <mxGraphModel dx="981" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="akses" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Akses Sistem&#xa;(Browser / Scan QR)" vertex="1">
+          <mxGeometry height="60" width="160" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="loginCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Sudah Login?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="redirDash" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Redirect ke Dashboard" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="qrCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Akses via QR Scan?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="loginPage" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tampilkan Halaman Login" vertex="1">
+          <mxGeometry height="60" width="160" x="280" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="shape=parallelogram;whiteSpace=wrap;html=1;" value="Masukkan Username&amp;nbsp;&lt;div&gt;dan Password&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="200" x="260" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="blockCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Akun Diblokir?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="blockMsg" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pesan Akun Diblokir + Log" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="endBlock" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="validCheck" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Kredensial Valid?" vertex="1">
+          <mxGeometry height="80" width="160" x="520" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="success" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Reset Attempt + Log" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tampilkan Dashboard" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="endSuccess" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="540" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-1" edge="1" parent="1" source="start" style="endArrow=block;" target="akses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-2" edge="1" parent="1" source="akses" style="endArrow=block;" target="loginCheck">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-3" edge="1" parent="1" source="loginCheck" style="endArrow=block;" target="redirDash" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-4" edge="1" parent="1" source="loginCheck" style="endArrow=block;" target="qrCheck" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-5" edge="1" parent="1" source="qrCheck" style="endArrow=block;" target="loginPage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-6" edge="1" parent="1" source="loginPage" style="endArrow=block;" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-7" edge="1" parent="1" source="input" style="endArrow=block;" target="blockCheck">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-8" edge="1" parent="1" source="blockCheck" style="endArrow=block;" target="blockMsg" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-9" edge="1" parent="1" source="blockMsg" style="endArrow=block;" target="endBlock">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-10" edge="1" parent="1" source="blockCheck" style="endArrow=block;" target="validCheck" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-11" edge="1" parent="1" source="validCheck" style="endArrow=block;" target="success" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-12" edge="1" parent="1" source="success" style="endArrow=block;" target="dashboard">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uC7u35UbPU0M8rAjOYuq-13" edge="1" parent="1" source="dashboard" style="endArrow=block;" target="endSuccess">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Scan QR" id="0">
+    <mxGraphModel dx="1471" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="scan" parent="1" style="rounded=0;html=1;" value="Scan QR Code" vertex="1">
+          <mxGeometry height="60" width="160" x="280" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="parse" parent="1" style="rounded=0;html=1;" value="Parse URL /scan/id/" vertex="1">
+          <mxGeometry height="60" width="160" x="280" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="rhombus;html=1;" value="Instrument ID Valid?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="rounded=0;html=1;" value="Error 404" vertex="1">
+          <mxGeometry height="60" width="140" x="80" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="end1" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="90" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="login" parent="1" style="rhombus;html=1;" value="Sudah Login?" vertex="1">
+          <mxGeometry height="80" width="140" x="300" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="session" parent="1" style="rounded=0;html=1;" value="Simpan Session" vertex="1">
+          <mxGeometry height="60" width="160" x="530" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="proc" parent="1" style="rounded=0;html=1;" value="Proses Login" vertex="1">
+          <mxGeometry height="60" width="160" x="500" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="cert" parent="1" style="rounded=0;html=1;" value="Ambil Sertifikat" vertex="1">
+          <mxGeometry height="60" width="160" x="260" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="result" parent="1" style="rounded=0;html=1;" value="Tampilkan Scan Result" vertex="1">
+          <mxGeometry height="60" width="180" x="300" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="end2" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="320" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-1" edge="1" parent="1" source="start" target="scan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-2" edge="1" parent="1" source="scan" target="parse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-3" edge="1" parent="1" source="parse" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-4" edge="1" parent="1" source="valid" target="error" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-5" edge="1" parent="1" source="error" target="end1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-6" edge="1" parent="1" source="valid" target="login" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-7" edge="1" parent="1" source="login" target="session" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-8" edge="1" parent="1" source="session" target="proc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-9" edge="1" parent="1" source="proc" target="result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-10" edge="1" parent="1" source="login" target="cert" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-11" edge="1" parent="1" source="cert" target="result">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NbxoV311-V1Nmb7vkXt6-12" edge="1" parent="1" source="result" target="end2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

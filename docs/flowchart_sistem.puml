@@ -1,0 +1,664 @@
+@startuml Flowchart_Utama_Sistem
+title **Flowchart Utama - Sistem Manajemen Sertifikat Kalibrasi Berbasis QR Code**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+|#E3F2FD|Pengguna|
+start
+:Akses Sistem\n(Browser / Scan QR);
+
+|#FFF3E0|Sistem|
+if (Sudah Login?) then (ya)
+    :Redirect ke **Dashboard**;
+else (tidak)
+    if (Akses via QR Scan?) then (ya)
+        :Simpan instrument_id\ndi session;
+        :Redirect ke\n**Halaman Login**\n(dengan next URL);
+    else (tidak)
+        :Tampilkan\n**Halaman Login**;
+    endif
+endif
+
+|#E3F2FD|Pengguna|
+:Masukkan\nUsername & Password;
+
+|#FFF3E0|Sistem|
+if (Akun Diblokir?) then (ya)
+    #FFCDD2:Tampilkan pesan\n**"Akun Diblokir"**;
+    :Catat ke **Access Log**\n(login_failed);
+    stop
+else (tidak)
+    if (Kredensial Valid?) then (ya)
+        :Reset failed_attempts = 0;
+        :Catat ke **Access Log**\n(login_success);
+        if (Ada next URL?) then (ya)
+            :Redirect ke next URL\n(Scan Result);
+        else (tidak)
+            :Redirect ke **Dashboard**;
+        endif
+    else (tidak)
+        :Increment\nfailed_attempts + 1;
+        if (failed_attempts >= 3?) then (ya)
+            #FFCDD2:Blokir Akun\n(is_blocked = True);
+            :Catat ke **Access Log**;
+            :Tampilkan pesan\n**"Akun Diblokir (3x gagal)"**;
+            stop
+        else (tidak)
+            :Catat ke **Access Log**\n(login_failed);
+            :Tampilkan pesan\n**"Sisa Percobaan: X"**;
+            |#E3F2FD|Pengguna|
+            :Coba Login Ulang;
+            detach
+        endif
+    endif
+endif
+
+|#E8F5E9|Dashboard|
+:Tampilkan **Dashboard**;
+note right
+  **Statistik Dashboard:**
+  * Total Instrumen
+  * Total Sertifikat Aktif
+  * Sertifikat Valid
+  * Sertifikat Segera Expired
+  * Sertifikat Expired
+  * 10 Log Akses Terbaru
+  * 5 Sertifikat Segera Expired
+end note
+
+fork
+    :Kelola **Instrumen**;
+    detach
+fork again
+    :Kelola **Sertifikat**;
+    detach
+fork again
+    :Lihat **Monitoring**\n(Access Log);
+    detach
+fork again
+    :Kelola **Pengguna**;
+    detach
+fork again
+    :Kirim **Notifikasi**\nExpiry Email;
+    detach
+end fork
+
+stop
+@enduml
+
+
+' ============================================================
+' FLOWCHART 2: REGISTRASI PENGGUNA
+' ============================================================
+@startuml Flowchart_Registrasi
+title **Flowchart Registrasi Pengguna**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+start
+:Akses Halaman **Registrasi**;
+
+if (Sudah Login?) then (ya)
+    :Redirect ke Dashboard;
+    stop
+else (tidak)
+endif
+
+:Tampilkan **Form Registrasi**;
+note right
+  **Field Input:**
+  * Username
+  * Email
+  * Nama Lengkap
+  * Instansi/Perusahaan
+  * No. Telepon
+  * Password
+  * Konfirmasi Password
+end note
+
+:Isi Form dan Submit;
+
+if (Form Valid?) then (ya)
+    :Buat User baru\n(Django Auth User);
+    :Buat **UserProfile**\n(role = scanner);
+    :Auto Login;
+    #C8E6C9:Tampilkan pesan\n**"Registrasi Berhasil"**;
+    :Redirect ke **Dashboard**;
+else (tidak)
+    #FFCDD2:Tampilkan\n**Pesan Error Validasi**;
+    :Kembali ke\nForm Registrasi;
+    detach
+endif
+
+stop
+@enduml
+
+
+' ============================================================
+' FLOWCHART 3: QR SCAN
+' ============================================================
+@startuml Flowchart_QR_Scan
+title **Flowchart Proses Scan QR Code**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+|#E3F2FD|Pengguna|
+start
+:Scan **QR Code**\npada instrumen fisik;
+
+|#FFF3E0|Sistem|
+:Parse URL:\n/scan/<instrument_id>/;
+
+if (Instrument ID Valid?) then (ya)
+    :Ambil data Instrument\ndari Database;
+else (tidak)
+    #FFCDD2:Tampilkan\n**Error 404**;
+    stop
+endif
+
+if (User Sudah Login?) then (ya)
+    :Ambil Sertifikat\nTerbaru (Latest);
+    :Catat **Access Log**\n(action: view, detail: QR Scan);
+    
+    |#E8F5E9|Hasil Scan|
+    :Tampilkan\n**Scan Result Page**;
+    note right
+      **Informasi Ditampilkan:**
+      * Nama Alat
+      * Merk / Model / Tipe
+      * Nomor Seri
+      * Lokasi
+      * Status Kalibrasi
+      * No. Sertifikat
+      * Tanggal Kalibrasi
+      * Berlaku Hingga
+      * Laboratorium
+    end note
+    stop
+    
+else (tidak)
+    |#FFF3E0|Sistem|
+    :Simpan instrument_id\ndi **Session**;
+    :Redirect ke\n**/login/?next=/scan/<id>/**;
+    
+    |#E3F2FD|Pengguna|
+    :Proses **Login**;
+    note right
+      Setelah login berhasil,
+      user otomatis diarahkan
+      kembali ke halaman scan
+    end note
+    
+    |#FFF3E0|Sistem|
+    :Redirect ke\nScan Result;
+    stop
+endif
+
+@enduml
+
+
+' ============================================================
+' FLOWCHART 4: MANAJEMEN INSTRUMEN (CRUD)
+' ============================================================
+@startuml Flowchart_Instrumen
+title **Flowchart Manajemen Instrumen**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+start
+:Akses Halaman\n**Daftar Instrumen**;
+note right
+  **Fitur Pencarian:**
+  Filter berdasarkan:
+  * Nama Alat
+  * Nomor Seri
+  * Merk
+  * Lokasi
+end note
+
+:Tampilkan Daftar Instrumen;
+
+switch (Pilih Aksi?)
+case ( Tambah Baru )
+    :Tampilkan\n**Form Instrumen**;
+    :Isi Data Instrumen;
+    if (Form Valid?) then (ya)
+        :Simpan ke Database;
+        :Auto Generate\n**QR Code**;
+        note right
+          QR Code di-generate
+          menggunakan library
+          **qrcode** Python
+          (ERROR_CORRECT_H)
+        end note
+        #C8E6C9:Pesan:\n**"Alat Berhasil Ditambahkan"**;
+        :Redirect ke\n**Detail Instrumen**;
+    else (tidak)
+        #FFCDD2:Tampilkan Error;
+        detach
+    endif
+
+case ( Lihat Detail )
+    :Tampilkan **Detail Instrumen**;
+    note right
+      **Detail meliputi:**
+      * Info Alat
+      * QR Code
+      * Daftar Sertifikat
+      * Status Kalibrasi
+    end note
+    
+    switch (Sub Aksi?)
+    case ( Edit )
+        :Tampilkan Form Edit;
+        :Ubah Data;
+        if (Valid?) then (ya)
+            :Simpan Perubahan;
+            #C8E6C9:**"Data Diperbarui"**;
+        else (tidak)
+            #FFCDD2:Tampilkan Error;
+        endif
+    case ( Hapus )
+        :Tampilkan\nKonfirmasi Hapus;
+        if (Konfirmasi?) then (ya)
+            :Hapus Instrumen\n+ Sertifikat terkait;
+            #C8E6C9:**"Alat Dihapus"**;
+            :Redirect ke Daftar;
+        else (tidak)
+            :Batal;
+        endif
+    case ( Regenerate QR )
+        :Generate Ulang\nQR Code;
+        #C8E6C9:**"QR Code Diperbarui"**;
+    case ( Print QR )
+        :Tampilkan Halaman\n**Print QR Code**;
+        note right
+          Halaman cetak
+          khusus untuk
+          ditempel pada
+          instrumen fisik
+        end note
+    case ( Tambah Sertifikat )
+        :Redirect ke\nForm Sertifikat\n(pre-select instrument);
+    endswitch
+
+case ( Cari/Filter )
+    :Eksekusi Query\nPencarian;
+    :Tampilkan Hasil;
+    detach
+endswitch
+
+stop
+@enduml
+
+
+' ============================================================
+' FLOWCHART 5: MANAJEMEN SERTIFIKAT (CRUD)
+' ============================================================
+@startuml Flowchart_Sertifikat
+title **Flowchart Manajemen Sertifikat Kalibrasi**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+start
+:Akses Halaman\n**Daftar Sertifikat**;
+note right
+  **Filter Tersedia:**
+  * Pencarian teks
+  * Status: Valid
+  * Status: Expired
+  * Status: Nonaktif
+end note
+
+:Tampilkan Daftar Sertifikat\n(dengan status warna);
+note right
+  **Indikator Status:**
+  🟢 Valid (success)
+  🟡 Segera Expired ≤7 hari (warning)
+  🔴 Expired (danger)
+  ⚪ Nonaktif (secondary)
+end note
+
+switch (Pilih Aksi?)
+case ( Tambah Baru )
+    :Tampilkan\n**Form Sertifikat**;
+    note right
+      **Field Input:**
+      * Pilih Alat/Instrumen
+      * Nomor Sertifikat
+      * Tanggal Kalibrasi
+      * Berlaku Hingga
+      * Laboratorium
+      * Teknisi
+      * Penanggung Jawab
+      * Upload File PDF
+      * Status Aktif
+    end note
+    :Isi Data & Upload PDF;
+    if (Form Valid?) then (ya)
+        :Simpan ke Database;
+        #C8E6C9:Pesan:\n**"Sertifikat Ditambahkan"**;
+        :Redirect ke\n**Detail Sertifikat**;
+    else (tidak)
+        #FFCDD2:Tampilkan Error Validasi;
+        detach
+    endif
+
+case ( Lihat Detail )
+    :Tampilkan **Detail Sertifikat**;
+    :Catat **Access Log**\n(action: view);
+    
+    switch (Sub Aksi?)
+    case ( Edit )
+        :Tampilkan Form Edit;
+        :Ubah Data;
+        if (Valid?) then (ya)
+            :Simpan Perubahan;
+            #C8E6C9:**"Sertifikat Diperbarui"**;
+        else (tidak)
+            #FFCDD2:Tampilkan Error;
+        endif
+    case ( Hapus )
+        :Tampilkan Konfirmasi Hapus;
+        if (Konfirmasi?) then (ya)
+            :Hapus Sertifikat;
+            #C8E6C9:**"Sertifikat Dihapus"**;
+            :Redirect ke Daftar;
+        else (tidak)
+            :Batal;
+        endif
+    case ( Download PDF )
+        if (File PDF Ada?) then (ya)
+            :Catat **Access Log**\n(action: download);
+            :Serve File PDF\n(Content-Disposition);
+        else (tidak)
+            #FFCDD2:**"File Tidak Tersedia"**;
+        endif
+    endswitch
+
+case ( Filter Status )
+    :Filter berdasarkan\nstatus terpilih;
+    :Tampilkan Hasil;
+    detach
+endswitch
+
+stop
+@enduml
+
+
+' ============================================================
+' FLOWCHART 6: MONITORING & NOTIFIKASI
+' ============================================================
+@startuml Flowchart_Monitoring
+title **Flowchart Monitoring & Notifikasi**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 12
+
+skinparam activity {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    DiamondBackgroundColor #FFF9C4
+    DiamondBorderColor #F9A825
+    ArrowColor #546E7A
+    StartColor #4CAF50
+    EndColor #F44336
+}
+
+|#E3F2FD|Monitoring|
+start
+:Akses Halaman\n**Monitoring (Access Log)**;
+
+:Query 100 Log Terbaru\n(dengan filter);
+note right
+  **Filter Tersedia:**
+  * Berdasarkan Aksi:
+    - view (Lihat)
+    - download (Download)
+    - login_success
+    - login_failed
+  * Pencarian teks
+    (username, alat, sertifikat)
+end note
+
+:Tampilkan Tabel Log;
+note right
+  **Kolom Log:**
+  * Waktu Akses
+  * Pengguna
+  * Aksi
+  * Instrumen
+  * Sertifikat
+  * IP Address
+  * User Agent
+  * Detail
+end note
+stop
+
+|#FFF3E0|Notifikasi Email|
+start
+:Admin Klik\n**"Kirim Notifikasi"**;
+
+:Query Sertifikat\nExpiring ≤ 7 hari;
+
+if (Ada Sertifikat\nSegera Expired?) then (ya)
+    :Loop setiap sertifikat;
+    repeat
+        :Kirim Email via\n**send_mail()**;
+        note right
+          **Isi Email:**
+          * Nama Alat
+          * No. Sertifikat
+          * Berlaku Hingga
+          * Sisa Hari
+          * Peringatan kalibrasi ulang
+        end note
+        :count += 1;
+    repeat while (Masih ada sertifikat?) is (ya) not (tidak)
+    #C8E6C9:Pesan:\n**"X notifikasi terkirim"**;
+else (tidak)
+    :Pesan:\n**"0 notifikasi terkirim"**;
+endif
+
+:Redirect ke **Dashboard**;
+stop
+
+|#E8F5E9|Manajemen User|
+start
+:Akses Halaman\n**Manajemen Pengguna**;
+
+:Tampilkan Daftar\nUserProfile;
+note right
+  **Info Ditampilkan:**
+  * Nama Lengkap
+  * Username
+  * Instansi
+  * Role (Admin/Scanner)
+  * Status Blokir
+  * Percobaan Gagal
+end note
+
+if (Ada User Diblokir?) then (ya)
+    :Admin Klik **"Unblock"**;
+    :Reset failed_attempts = 0;
+    :Set is_blocked = False;
+    :Set blocked_at = None;
+    #C8E6C9:Pesan:\n**"User Berhasil Di-Unblock"**;
+else (tidak)
+    :Tidak ada aksi;
+endif
+
+stop
+@enduml
+
+
+' ============================================================
+' FLOWCHART 7: ENTITY RELATIONSHIP DIAGRAM
+' ============================================================
+@startuml ERD_Sistem
+title **Entity Relationship Diagram - Sistem QR Kalibrasi**
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing false
+skinparam defaultFontName "Segoe UI"
+skinparam defaultFontSize 11
+
+skinparam class {
+    BackgroundColor #E8EAF6
+    BorderColor #3F51B5
+    FontColor #1A237E
+    HeaderBackgroundColor #C5CAE9
+    ArrowColor #546E7A
+}
+
+entity "**User**\n(Django Auth)" as User {
+    * id : Integer <<PK>>
+    --
+    username : CharField
+    email : EmailField
+    password : CharField
+    is_superuser : Boolean
+}
+
+entity "**UserProfile**" as UP {
+    * id : Integer <<PK>>
+    --
+    * user_id : Integer <<FK>>
+    nama_lengkap : CharField(200)
+    instansi : CharField(200)
+    no_telp : CharField(20)
+    role : CharField (admin/scanner)
+    is_blocked : Boolean
+    failed_attempts : Integer
+    blocked_at : DateTime
+}
+
+entity "**Instrument**" as Inst {
+    * id : UUID <<PK>>
+    --
+    nama_alat : CharField(200)
+    merk : CharField(100)
+    model_tipe : CharField(100)
+    nomor_seri : CharField(100) <<UNIQUE>>
+    pemilik : CharField(200)
+    lokasi : CharField(200)
+    deskripsi : TextField
+    qr_code : ImageField
+    created_at : DateTime
+    updated_at : DateTime
+}
+
+entity "**Certificate**" as Cert {
+    * id : UUID <<PK>>
+    --
+    * instrument_id : UUID <<FK>>
+    nomor_sertifikat : CharField(100) <<UNIQUE>>
+    tanggal_kalibrasi : DateField
+    tanggal_berlaku : DateField
+    laboratorium : CharField(200)
+    teknisi : CharField(200)
+    penanggung_jawab : CharField(200)
+    file_sertifikat : FileField
+    is_active : Boolean
+    created_at : DateTime
+    updated_at : DateTime
+}
+
+entity "**AccessLog**" as ALog {
+    * id : Integer <<PK>>
+    --
+    user_id : Integer <<FK>> (nullable)
+    certificate_id : UUID <<FK>> (nullable)
+    instrument_id : UUID <<FK>> (nullable)
+    action : CharField (view/download/login_*)
+    ip_address : GenericIPAddress
+    user_agent : TextField
+    accessed_at : DateTime
+    detail : TextField
+}
+
+User ||--|| UP : "has one"
+User ||--o{ ALog : "generates"
+Inst ||--o{ Cert : "has many"
+Inst ||--o{ ALog : "referenced in"
+Cert ||--o{ ALog : "referenced in"
+@enduml

@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load humanize %}
+
+{% block title %}Log Akses{% endblock %}
+{% block page_title %}Monitoring - Log Akses{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <!-- Filter -->
+    <form method="get" class="filter-bar">
+        <div class="input-group" style="max-width: 360px;">
+            <input type="text" name="q" value="{{ query }}" class="form-control search-input"
+                   placeholder="Cari user, alat..." id="search-log">
+            <button class="btn btn-glass" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="{% url 'access_log' %}" class="btn btn-glass btn-sm {% if not action_filter %}border-accent{% endif %}">Semua</a>
+            <a href="?action=view" class="btn btn-glass btn-sm {% if action_filter == 'view' %}border-accent{% endif %}">
+                <i class="bi bi-eye" style="color: var(--info);"></i> View
+            </a>
+            <a href="?action=download" class="btn btn-glass btn-sm {% if action_filter == 'download' %}border-accent{% endif %}">
+                <i class="bi bi-download" style="color: var(--accent-secondary);"></i> Download
+            </a>
+            <a href="?action=login_success" class="btn btn-glass btn-sm {% if action_filter == 'login_success' %}border-accent{% endif %}">
+                <i class="bi bi-check" style="color: var(--success);"></i> Login OK
+            </a>
+            <a href="?action=login_failed" class="btn btn-glass btn-sm {% if action_filter == 'login_failed' %}border-accent{% endif %}">
+                <i class="bi bi-x" style="color: var(--danger);"></i> Login Gagal
+            </a>
+        </div>
+    </form>
+
+    {% if logs %}
+    <div class="glass-card" data-animate>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="glass-table">
+                    <thead>
+                        <tr>
+                            <th>Waktu</th>
+                            <th>User</th>
+                            <th>Aksi</th>
+                            <th>Alat</th>
+                            <th>Sertifikat</th>
+                            <th>IP Address</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for log in logs %}
+                        <tr>
+                            <td style="font-size: 0.8rem; white-space: nowrap;">
+                                {{ log.accessed_at|date:"d/m/Y H:i" }}
+                            </td>
+                            <td>
+                                <strong>{{ log.user.username|default:"-" }}</strong>
+                            </td>
+                            <td>
+                                <span class="log-action {{ log.action }}">{{ log.get_action_display }}</span>
+                            </td>
+                            <td>{{ log.instrument|default:"-" }}</td>
+                            <td style="font-size: 0.8rem;">{{ log.certificate.nomor_sertifikat|default:"-" }}</td>
+                            <td style="font-size: 0.8rem; color: var(--text-muted);">{{ log.ip_address|default:"-" }}</td>
+                            <td style="font-size: 0.8rem; color: var(--text-muted);">{{ log.detail|default:"-"|truncatewords:5 }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="glass-card">
+        <div class="empty-state">
+            <i class="bi bi-activity"></i>
+            <h4>Belum Ada Log</h4>
+            <p>Log akses akan muncul setelah ada aktivitas di sistem.</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

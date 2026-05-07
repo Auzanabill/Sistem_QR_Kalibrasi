@@ -1,0 +1,2234 @@
+[
+  {
+    "model": "certificates.instrument",
+    "pk": "11c0a8f1-5ba0-4f62-ad20-091d11c4c53c",
+    "fields": {
+      "nama_alat": "Rubidium Frequency Standard",
+      "merk": "Pendulum",
+      "model_tipe": "GPS-12R",
+      "nomor_seri": "452029",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 001/KAL | Metode Kalibrasi: Eksternal - SNSU | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "ac2b49fb-9e0c-4083-aa0d-2baebb846a11",
+    "fields": {
+      "nama_alat": "Signal Generator",
+      "merk": "R & S",
+      "model_tipe": "SMA100B",
+      "nomor_seri": "105949-FC",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 002/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "d95c68f0-944f-4387-a906-fca383afd132",
+    "fields": {
+      "nama_alat": "Microwave Counter / Analyzer",
+      "merk": "Pendulum",
+      "model_tipe": "CNT-90XL",
+      "nomor_seri": "969631",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 003/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "de623280-711f-4023-809c-5671292783d9",
+    "fields": {
+      "nama_alat": "Power Meter",
+      "merk": "Anritsu",
+      "model_tipe": "ML2437A",
+      "nomor_seri": "1923004",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 004/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9cff1012-3f3f-4cd9-8496-56e18fb9224a",
+    "fields": {
+      "nama_alat": "Power Sensor",
+      "merk": "Anritsu",
+      "model_tipe": "MA24273D",
+      "nomor_seri": "1911007",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 005/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b2260db9-b185-4a02-8005-a468ba83797c",
+    "fields": {
+      "nama_alat": "High Performance Optical Power Meter",
+      "merk": "EXFO",
+      "model_tipe": "1750",
+      "nomor_seri": "1636843",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 006/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "767d029a-113e-4ff5-9cd2-d6ddba52f135",
+    "fields": {
+      "nama_alat": "Variable Optical Attenuator",
+      "merk": "EXFO",
+      "model_tipe": "3500",
+      "nomor_seri": "1638775",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 007/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "00aa8cdb-4584-4f51-8e6f-61560a0fd2b1",
+    "fields": {
+      "nama_alat": "Optical Light Source",
+      "merk": "EXFO",
+      "model_tipe": "2150",
+      "nomor_seri": "1656285",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 008/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "d1c7d3c7-efa2-4208-9da8-529fcb0dfcc9",
+    "fields": {
+      "nama_alat": "~2.2 km Length of Single Mode Optical Fibre",
+      "merk": "Corning",
+      "model_tipe": "~2.2 km",
+      "nomor_seri": "100537530456D",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 009/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Sedang",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "4f6773a0-f5b7-420f-8f1e-225f8df7d13c",
+    "fields": {
+      "nama_alat": "~12.6 km Length of Single Mode Optical Fibre",
+      "merk": "Corning",
+      "model_tipe": "~12.6 km",
+      "nomor_seri": "100547391626",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 010/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Sedang",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "1c887cc5-b647-4f3c-bda4-b8c938b25aef",
+    "fields": {
+      "nama_alat": "Multimeter",
+      "merk": "HP",
+      "model_tipe": "3458 A",
+      "nomor_seri": "2823A13780",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 011/KAL | Metode Kalibrasi: Eksternal - SNSU | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "ee20fb21-8b92-4b4a-aad2-fa62d9290147",
+    "fields": {
+      "nama_alat": "Precision RLC Meter",
+      "merk": "Quadtech",
+      "model_tipe": "7600",
+      "nomor_seri": "7124266",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 012/KAL | Metode Kalibrasi: Eksternal - SNSU | Frekuensi Kalibrasi: Sedang",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "68ac64ac-f3aa-43df-96f3-a96f80c6aaf3",
+    "fields": {
+      "nama_alat": "Advanced Multiproduct Calibrator",
+      "merk": "Transmille",
+      "model_tipe": "4015",
+      "nomor_seri": "Y1269E1B",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 013/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Tinggi",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9ea8f9a1-2200-4cbb-88bf-a7a989f80879",
+    "fields": {
+      "nama_alat": "Calibration System",
+      "merk": "Wavetek",
+      "model_tipe": "9100",
+      "nomor_seri": "40766",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 014/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "165e27bf-9e30-4d21-b070-cab996e76bbb",
+    "fields": {
+      "nama_alat": "Calibration System",
+      "merk": "Wavetek",
+      "model_tipe": "9100",
+      "nomor_seri": "32781",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 015/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "d57f8271-94cc-485a-bb54-5e499471d77a",
+    "fields": {
+      "nama_alat": "High Voltage Digital Meter",
+      "merk": "Kikusui",
+      "model_tipe": "149-10A",
+      "nomor_seri": "JC003087",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 016/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "6858c0d0-c947-4258-b8fb-de8e164d6cf6",
+    "fields": {
+      "nama_alat": "Withstanding Voltage Tester",
+      "merk": "Kikusui",
+      "model_tipe": "TOS5101",
+      "nomor_seri": "JD000740",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 017/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b0b91494-4b6a-412c-b20d-daf82fa06bc7",
+    "fields": {
+      "nama_alat": "High Resistance Decade Substituter",
+      "merk": "IET",
+      "model_tipe": "HRRS-kV Series Q-7-100",
+      "nomor_seri": "B1-0416034",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 018/KAL | Metode Kalibrasi: Eksternal - TIF | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "de6565f6-24ef-4253-9342-431616c6bfb4",
+    "fields": {
+      "nama_alat": "Audio Analyzer",
+      "merk": "HP",
+      "model_tipe": "8903 B",
+      "nomor_seri": "2818A04574",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 019/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "10cd966d-bfef-4ba3-a1cd-0711b8cfe80a",
+    "fields": {
+      "nama_alat": "Spectrum Analyzer",
+      "merk": "Agilent",
+      "model_tipe": "E4407B",
+      "nomor_seri": "MY44212591",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 020/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "96ee24bc-d302-4395-aeaa-8d5bf6c5bce6",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "0.01 Ω",
+      "nomor_seri": "7172",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 021/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "fcccacc5-2c88-4b3d-b4cf-db034bec6e73",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "0.1 Ω",
+      "nomor_seri": "7810",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 022/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "153c77e9-e096-4cf3-ae47-032af9fc4e53",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "1 Ω",
+      "nomor_seri": "7691",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 023/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "aabea27c-5d31-413b-aa4c-d932c6e30568",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "10 Ω",
+      "nomor_seri": "7528",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 024/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "61909d51-1b70-48e7-8aee-2553ff024332",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "100 Ω",
+      "nomor_seri": "7520",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 025/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "d94dc154-a842-4e99-bc0b-1decf41d922b",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "1000 Ω",
+      "nomor_seri": "7664",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 026/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "f58596ba-d201-4f44-80c0-b4ab7c9daae9",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "10000 Ω",
+      "nomor_seri": "7097",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 027/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "ba2d4201-251c-44f7-9525-f44b05b7ef63",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "100 kΩ",
+      "nomor_seri": "N/A-028/KAL",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 028/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b7e45e0e-17a9-44ae-990a-e39d39aafffd",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-B (100 µH)",
+      "nomor_seri": "6422734",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 029/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "2f9373d3-2998-4cc2-bd6e-462259d5b7a1",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-E (1 mH)",
+      "nomor_seri": "6422735",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 030/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "ff6c5541-9a91-49d4-bf76-db788779963e",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-H (10 mH)",
+      "nomor_seri": "6422736",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 031/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "f5fe8c2a-88a3-49a9-b479-7a8d4d5b3d7c",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-L (100 mH)",
+      "nomor_seri": "6422737",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 032/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "f950d252-f76c-4dea-b20e-17633086553c",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-P (1 H)",
+      "nomor_seri": "6422738",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 033/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9f4fa76b-683a-4f2f-a216-74bd429c3187",
+    "fields": {
+      "nama_alat": "Standard Inductor",
+      "merk": "Quadtech",
+      "model_tipe": "1482-T (10 H)",
+      "nomor_seri": "6422739",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 034/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "a5c07f30-5360-4ea4-b304-a9944f04dfc8",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 0.01 µF",
+      "merk": "HP",
+      "model_tipe": "16385A",
+      "nomor_seri": "2519J00513",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 035/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "77a82581-a0ea-4791-b138-eb0748a15461",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 0.1 µF",
+      "merk": "HP",
+      "model_tipe": "16386A",
+      "nomor_seri": "2519J00513-16386A",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 036/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9e419d70-5d9f-444b-ac4e-9302696db24b",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 1 µF",
+      "merk": "HP",
+      "model_tipe": "16387A",
+      "nomor_seri": "2519J00513-16387A",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 037/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "e51ea24b-a679-40cc-8290-635495459f60",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 1pF",
+      "merk": "HP",
+      "model_tipe": "16381A",
+      "nomor_seri": "1840J01317",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 038/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "89ebc361-20c5-4268-8bb2-5ad37c1b8156",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 10 pF",
+      "merk": "HP",
+      "model_tipe": "16382A",
+      "nomor_seri": "1840J01317-16382A",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 039/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "c3804f7f-3ea1-4f6a-b7e3-3125bb02cc46",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 100 pF",
+      "merk": "HP",
+      "model_tipe": "16383A",
+      "nomor_seri": "1840J01317-16383A",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 040/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "f1b94002-78d6-4248-b07f-2e82adc22ad0",
+    "fields": {
+      "nama_alat": "Standard Air Capacitor 1000 pF",
+      "merk": "HP",
+      "model_tipe": "16384A",
+      "nomor_seri": "1840J01317-16384A",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 041/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "d2e7f8d7-8a0b-48f4-9b28-113b29c45673",
+    "fields": {
+      "nama_alat": "Digital Oscilloscope",
+      "merk": "Rigol",
+      "model_tipe": "MSO5354",
+      "nomor_seri": "MS5A213303328",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 042/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9cee0eb3-3178-40f2-ad47-eb8db0316437",
+    "fields": {
+      "nama_alat": "Digital Phospor Oscilloscope",
+      "merk": "Tektronix",
+      "model_tipe": "TDS 3052B",
+      "nomor_seri": "C010090",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 043/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "34cc2f09-d076-4af5-90cf-14dcee6d7692",
+    "fields": {
+      "nama_alat": "Decade Resistance Box",
+      "merk": "Yokogawa",
+      "model_tipe": "279301",
+      "nomor_seri": "54FT0301",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 044/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "3bc1b12c-3265-4d6a-8a2f-1a050f0853b7",
+    "fields": {
+      "nama_alat": "Decade Resistance Box",
+      "merk": "Yokogawa",
+      "model_tipe": "279303",
+      "nomor_seri": "26FT1066",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 045/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "aed20674-ea7f-4a20-b451-5b6cfbbf6c96",
+    "fields": {
+      "nama_alat": "Decade Resistance Box",
+      "merk": "Yokogawa",
+      "model_tipe": "279301",
+      "nomor_seri": "60VX0222",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 046/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "6e2f2fec-1164-44b5-809c-aef2ef14a0b5",
+    "fields": {
+      "nama_alat": "Decade Resistance Box",
+      "merk": "Yokogawa",
+      "model_tipe": "2786-20",
+      "nomor_seri": "60VU1118",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 047/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "1e35faae-6b05-4fe3-8680-60cc6c7cc5da",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "0.0001 Ω",
+      "nomor_seri": "7348",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 048/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "c1fa4799-d082-4d6f-9e8a-cd141aaedac0",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "100 Ω",
+      "nomor_seri": "7518",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 049/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "19bd20a1-99eb-4253-b8d0-dee6d679194e",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "10 Ω",
+      "nomor_seri": "7529",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 050/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "8226233b-b5e2-4157-8a87-038b59268d27",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "1000 Ω",
+      "nomor_seri": "7662",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 051/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "288644d2-2bc0-4ddd-913c-5ecfd5177808",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "0.1 Ω",
+      "nomor_seri": "7419",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 052/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "08f3e8b7-17e8-4e4b-bc02-e07462bd9db3",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "10000 Ω",
+      "nomor_seri": "7099",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 053/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "9609f985-147c-4e7e-9d53-6e6e905a3dc4",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "1 Ω",
+      "nomor_seri": "7687",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 054/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "dc1fbb52-dfd7-4a01-9938-ec6763de76dd",
+    "fields": {
+      "nama_alat": "Standard Resistor",
+      "merk": "AEG",
+      "model_tipe": "0.001 Ω",
+      "nomor_seri": "6895",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 055/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "8c49fa7b-9b9f-48e2-aa61-79506e7abc8a",
+    "fields": {
+      "nama_alat": "Signal Generator",
+      "merk": "HP",
+      "model_tipe": "8656B",
+      "nomor_seri": "3334U14996",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 056/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "3fb3a9f9-a26d-44d4-bfe5-a9a462de9351",
+    "fields": {
+      "nama_alat": "Microwave Frequency Counter",
+      "merk": "HP",
+      "model_tipe": "5350B",
+      "nomor_seri": "2908A02285",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 057/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "4e8d11a5-87d7-4f93-b1c4-483a53a6edc1",
+    "fields": {
+      "nama_alat": "Digital Multimeter",
+      "merk": "Iwatsu",
+      "model_tipe": "VOAC 92",
+      "nomor_seri": "00021701",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 058/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "3cfa996d-9205-4d2c-95e2-9837914fb0f8",
+    "fields": {
+      "nama_alat": "AC Voltmeter",
+      "merk": "Yokogawa",
+      "model_tipe": "2353 00",
+      "nomor_seri": "60LH0860",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 059/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "e67044eb-6ba7-445f-8bc2-917dafe9ecfa",
+    "fields": {
+      "nama_alat": "AC Voltmeter",
+      "merk": "Yokogawa",
+      "model_tipe": "2353 00",
+      "nomor_seri": "60LH0862",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 060/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "c161b739-ee1c-4fef-8896-a7847cbf8927",
+    "fields": {
+      "nama_alat": "True RMS Clamp Meter",
+      "merk": "Fluke",
+      "model_tipe": "319",
+      "nomor_seri": "62470179WS",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 061/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "777633e6-d6ab-4a87-9260-fa206c0def6f",
+    "fields": {
+      "nama_alat": "Syncronisation Test Set",
+      "merk": "Oscilloquartz",
+      "model_tipe": "5565",
+      "nomor_seri": "945556502",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 062/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "f88bff98-4b61-4c8b-8a73-0acb63c15ff6",
+    "fields": {
+      "nama_alat": "High Voltage Digital Probe",
+      "merk": "Ross",
+      "model_tipe": "VMPVC120-GH-C-ALF",
+      "nomor_seri": "070215-6",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 063/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b6755d68-76f5-4983-8f5b-ab703fb76b66",
+    "fields": {
+      "nama_alat": "Set of 5 Standard Aesa",
+      "merk": "Aesa",
+      "model_tipe": "9001,9002,9003,9004,9005",
+      "nomor_seri": "4007",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 064/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "6773e7ca-f841-4c6f-b2a5-4413b00415af",
+    "fields": {
+      "nama_alat": "Scan & Generate Data Logger (Temp & Hum)",
+      "merk": "Enmos",
+      "model_tipe": "Enmos V2.0",
+      "nomor_seri": "ENM009",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 065/KAL | Metode Kalibrasi: Eksternal - Sentral | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "baab7af1-7888-4e40-83fa-e1ba7b5f7660",
+    "fields": {
+      "nama_alat": "Scan & Generate Data Logger (Temp & Hum)",
+      "merk": "Enmos",
+      "model_tipe": "",
+      "nomor_seri": "N/A-066/KAL",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 066/KAL | Metode Kalibrasi: Eksternal - Sentral | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b9f702fb-4830-4774-8eee-00165378f87c",
+    "fields": {
+      "nama_alat": "Scan & Generate Data Logger (Temp & Hum)",
+      "merk": "Enmos",
+      "model_tipe": "",
+      "nomor_seri": "N/A-067/KAL",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 067/KAL | Metode Kalibrasi: Eksternal - Sentral | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "3507865e-50da-4149-973b-d42c03a453c1",
+    "fields": {
+      "nama_alat": "Temperature Humidity Data Logger",
+      "merk": "Elitech",
+      "model_tipe": "GSP-6",
+      "nomor_seri": "EFG199G02487",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 068/KAL | Metode Kalibrasi: Eksternal - Sentral | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "5e83f022-d782-459d-9010-49b1175a3cb0",
+    "fields": {
+      "nama_alat": "Digital Multimeter",
+      "merk": "Iwatsu",
+      "model_tipe": "VOAC 92",
+      "nomor_seri": "21706",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 069/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "a96e6226-f4b9-45ca-bed4-54df72796753",
+    "fields": {
+      "nama_alat": "Optical Power Meter",
+      "merk": "JDSU",
+      "model_tipe": "OLP-57",
+      "nomor_seri": "P-0019",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 070/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "842749bb-8aa7-41ab-b9d6-c9ef0f644471",
+    "fields": {
+      "nama_alat": "Optical Light Source",
+      "merk": "JDSU",
+      "model_tipe": "OLS-55",
+      "nomor_seri": "M-0165",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 071/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.instrument",
+    "pk": "b0aeb9b3-4068-41dd-900f-e4c974385925",
+    "fields": {
+      "nama_alat": "Optical Time Domain Reflectometer",
+      "merk": "EXFO",
+      "model_tipe": "FTB-1v2",
+      "nomor_seri": "1521426",
+      "pemilik": "",
+      "lokasi": "",
+      "deskripsi": "No. Aset: 072/KAL | Metode Kalibrasi: Internal | Frekuensi Kalibrasi: Rendah",
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "4f76f1e2-9b4f-4ba0-be64-e33cc10b6d10",
+    "fields": {
+      "instrument": "11c0a8f1-5ba0-4f62-ad20-091d11c4c53c",
+      "nomor_sertifikat": "KALX62500725027R",
+      "tanggal_kalibrasi": "2025-07-08",
+      "tanggal_berlaku": "2026-07-08",
+      "laboratorium": "SNSU (Standar Nasional Satuan Ukuran)",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "6ef07fa4-143e-4062-99a3-4f757efc0b48",
+    "fields": {
+      "instrument": "ac2b49fb-9e0c-4083-aa0d-2baebb846a11",
+      "nomor_sertifikat": "KALX62509225098R",
+      "tanggal_kalibrasi": "2025-10-17",
+      "tanggal_berlaku": "2026-10-17",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "26d81797-8320-4b97-bcfb-6a083586e6a3",
+    "fields": {
+      "instrument": "d95c68f0-944f-4387-a906-fca383afd132",
+      "nomor_sertifikat": "084/KAL/2025",
+      "tanggal_kalibrasi": "2025-06-10",
+      "tanggal_berlaku": "2026-06-10",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "2d01515a-ad50-4362-b9b9-9f9a45c10949",
+    "fields": {
+      "instrument": "de623280-711f-4023-809c-5671292783d9",
+      "nomor_sertifikat": "013/KAL/2025",
+      "tanggal_kalibrasi": "2025-03-20",
+      "tanggal_berlaku": "2026-03-20",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "f8cc0daf-7a6c-4687-a6e4-14fbc9b06852",
+    "fields": {
+      "instrument": "9cff1012-3f3f-4cd9-8496-56e18fb9224a",
+      "nomor_sertifikat": "014/KAL/2025",
+      "tanggal_kalibrasi": "2025-03-20",
+      "tanggal_berlaku": "2026-03-20",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "51e45523-ff77-4e9d-88e4-48e7fceba8fa",
+    "fields": {
+      "instrument": "b2260db9-b185-4a02-8005-a468ba83797c",
+      "nomor_sertifikat": "104/KAL/2025",
+      "tanggal_kalibrasi": "2025-05-28",
+      "tanggal_berlaku": "2026-05-28",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "6f17ab94-35d9-43e8-b2bb-0f3494ef9a77",
+    "fields": {
+      "instrument": "767d029a-113e-4ff5-9cd2-d6ddba52f135",
+      "nomor_sertifikat": "103/KAL/2025",
+      "tanggal_kalibrasi": "2025-05-28",
+      "tanggal_berlaku": "2026-05-28",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "2ccbe486-410c-4a21-8fac-59d9a7342ee7",
+    "fields": {
+      "instrument": "00aa8cdb-4584-4f51-8e6f-61560a0fd2b1",
+      "nomor_sertifikat": "102/KAL/2022",
+      "tanggal_kalibrasi": "2025-05-28",
+      "tanggal_berlaku": "2026-05-28",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "daf9ed46-4a8f-465a-8b1d-afcc409a1694",
+    "fields": {
+      "instrument": "d1c7d3c7-efa2-4208-9da8-529fcb0dfcc9",
+      "nomor_sertifikat": "KALX62509425099R",
+      "tanggal_kalibrasi": "2025-11-20",
+      "tanggal_berlaku": "2026-11-20",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "13a57b06-509f-4351-81cf-0ec21e166f0b",
+    "fields": {
+      "instrument": "4f6773a0-f5b7-420f-8f1e-225f8df7d13c",
+      "nomor_sertifikat": "KALX62509125100R",
+      "tanggal_kalibrasi": "2025-11-20",
+      "tanggal_berlaku": "2026-11-20",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "374dd1b9-1d88-4524-8ca3-a0814d09c802",
+    "fields": {
+      "instrument": "1c887cc5-b647-4f3c-bda4-b8c938b25aef",
+      "nomor_sertifikat": "KALX62500925028R",
+      "tanggal_kalibrasi": "2025-07-23",
+      "tanggal_berlaku": "2026-07-07",
+      "laboratorium": "SNSU (Standar Nasional Satuan Ukuran)",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1d5e7c40-0804-454d-864e-c5aaf791720f",
+    "fields": {
+      "instrument": "ee20fb21-8b92-4b4a-aad2-fa62d9290147",
+      "nomor_sertifikat": "KALX62500825029R",
+      "tanggal_kalibrasi": "2025-07-14",
+      "tanggal_berlaku": "2026-07-14",
+      "laboratorium": "SNSU (Standar Nasional Satuan Ukuran)",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1b28fedf-9cc7-4267-bef9-555e09d38f6b",
+    "fields": {
+      "instrument": "68ac64ac-f3aa-43df-96f3-a96f80c6aaf3",
+      "nomor_sertifikat": "082/KAL/2025",
+      "tanggal_kalibrasi": "2025-05-28",
+      "tanggal_berlaku": "2026-05-28",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "3a0f4b3b-fe6c-40f5-95ad-92a978bf1589",
+    "fields": {
+      "instrument": "9ea8f9a1-2200-4cbb-88bf-a7a989f80879",
+      "nomor_sertifikat": "KALX62509325101R",
+      "tanggal_kalibrasi": "2025-11-18",
+      "tanggal_berlaku": "2026-11-18",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "6c1e266d-a7d5-4064-8438-8612a6e73b80",
+    "fields": {
+      "instrument": "165e27bf-9e30-4d21-b070-cab996e76bbb",
+      "nomor_sertifikat": "KALX62509625102R",
+      "tanggal_kalibrasi": "2025-11-03",
+      "tanggal_berlaku": "2026-11-03",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "ef8363c6-5141-4879-bedf-ecbe137c7cc9",
+    "fields": {
+      "instrument": "d57f8271-94cc-485a-bb54-5e499471d77a",
+      "nomor_sertifikat": "085/KAL/2025",
+      "tanggal_kalibrasi": "2025-05-23",
+      "tanggal_berlaku": "2026-05-23",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "f735527c-0235-445d-b951-2ff7ab49a647",
+    "fields": {
+      "instrument": "6858c0d0-c947-4258-b8fb-de8e164d6cf6",
+      "nomor_sertifikat": "KALX62501125030R",
+      "tanggal_kalibrasi": "2025-08-21",
+      "tanggal_berlaku": "2026-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "695f21dd-5c6e-4bea-8631-da9d456ae7e6",
+    "fields": {
+      "instrument": "b0b91494-4b6a-412c-b20d-daf82fa06bc7",
+      "nomor_sertifikat": "181/KAL/2024",
+      "tanggal_kalibrasi": "2024-09-05",
+      "tanggal_berlaku": "2025-09-05",
+      "laboratorium": "Fasilitas Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1b79eb19-dfd3-4311-9cab-5c1f30b3da5c",
+    "fields": {
+      "instrument": "de6565f6-24ef-4253-9342-431616c6bfb4",
+      "nomor_sertifikat": "142/KAL/2024",
+      "tanggal_kalibrasi": "2024-07-18",
+      "tanggal_berlaku": "2025-07-18",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "f387fe65-ee45-4a99-baaa-fc4a5458ecaf",
+    "fields": {
+      "instrument": "10cd966d-bfef-4ba3-a1cd-0711b8cfe80a",
+      "nomor_sertifikat": "KALX62501025031R",
+      "tanggal_kalibrasi": "2025-08-21",
+      "tanggal_berlaku": "2026-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "3f3cc8e0-09d9-4389-92d7-fdb7d0f7ba03",
+    "fields": {
+      "instrument": "96ee24bc-d302-4395-aeaa-8d5bf6c5bce6",
+      "nomor_sertifikat": "020/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-19",
+      "tanggal_berlaku": "2027-02-19",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "5436481f-fc09-43df-8be1-78e4fbdebe4b",
+    "fields": {
+      "instrument": "fcccacc5-2c88-4b3d-b4cf-db034bec6e73",
+      "nomor_sertifikat": "027/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-26",
+      "tanggal_berlaku": "2027-02-26",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "a8fdc72d-2b9d-4ad4-bc1b-cb49da6f499d",
+    "fields": {
+      "instrument": "153c77e9-e096-4cf3-ae47-032af9fc4e53",
+      "nomor_sertifikat": "018/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-19",
+      "tanggal_berlaku": "2027-02-19",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "94e59cc9-0c33-4c25-92f2-c81c03ab4885",
+    "fields": {
+      "instrument": "aabea27c-5d31-413b-aa4c-d932c6e30568",
+      "nomor_sertifikat": "024/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-19",
+      "tanggal_berlaku": "2027-02-19",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "3dba925a-8e52-4ff0-ae79-81ff607a67b0",
+    "fields": {
+      "instrument": "61909d51-1b70-48e7-8aee-2553ff024332",
+      "nomor_sertifikat": "019/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-21",
+      "tanggal_berlaku": "2027-02-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "de560966-62f6-41d9-be3e-8fd2a634659e",
+    "fields": {
+      "instrument": "d94dc154-a842-4e99-bc0b-1decf41d922b",
+      "nomor_sertifikat": "023/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-21",
+      "tanggal_berlaku": "2027-02-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "29bf9edd-63c7-4189-b99e-ef2553d34748",
+    "fields": {
+      "instrument": "f58596ba-d201-4f44-80c0-b4ab7c9daae9",
+      "nomor_sertifikat": "021/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-26",
+      "tanggal_berlaku": "2027-02-26",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1ce007f0-6ff9-465f-9f03-4f93eeeb9742",
+    "fields": {
+      "instrument": "ba2d4201-251c-44f7-9525-f44b05b7ef63",
+      "nomor_sertifikat": "022/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-21",
+      "tanggal_berlaku": "2027-02-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "44250ce1-2b63-404a-9cc4-572954d6b38a",
+    "fields": {
+      "instrument": "b7e45e0e-17a9-44ae-990a-e39d39aafffd",
+      "nomor_sertifikat": "170/KAL/2024",
+      "tanggal_kalibrasi": "2024-08-20",
+      "tanggal_berlaku": "2027-08-20",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "fa53545b-3f4d-4834-932d-c0187cc9c193",
+    "fields": {
+      "instrument": "2f9373d3-2998-4cc2-bd6e-462259d5b7a1",
+      "nomor_sertifikat": "166/KAL/2024",
+      "tanggal_kalibrasi": "2024-08-20",
+      "tanggal_berlaku": "2027-08-20",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "5083beae-9c99-4bfc-9025-7e600aa15a68",
+    "fields": {
+      "instrument": "ff6c5541-9a91-49d4-bf76-db788779963e",
+      "nomor_sertifikat": "169/KAL/2024",
+      "tanggal_kalibrasi": "2024-08-20",
+      "tanggal_berlaku": "2027-08-20",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "3bd04d76-4aa8-460d-835c-37749306d17b",
+    "fields": {
+      "instrument": "f5fe8c2a-88a3-49a9-b479-7a8d4d5b3d7c",
+      "nomor_sertifikat": "143/KAL/2024",
+      "tanggal_kalibrasi": "2024-07-15",
+      "tanggal_berlaku": "2027-07-15",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "4ef5d929-35f3-45e9-9d3f-ba402a63e6fe",
+    "fields": {
+      "instrument": "f950d252-f76c-4dea-b20e-17633086553c",
+      "nomor_sertifikat": "167/KAL/2024",
+      "tanggal_kalibrasi": "2024-09-02",
+      "tanggal_berlaku": "2027-09-02",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1f89c48d-1486-4898-a468-bf45d922a7cb",
+    "fields": {
+      "instrument": "9f4fa76b-683a-4f2f-a216-74bd429c3187",
+      "nomor_sertifikat": "144/KAL/2024",
+      "tanggal_kalibrasi": "2024-07-15",
+      "tanggal_berlaku": "2027-07-15",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "7ede88ad-92a4-45e1-a5cb-3bf4a74510e9",
+    "fields": {
+      "instrument": "a5c07f30-5360-4ea4-b304-a9944f04dfc8",
+      "nomor_sertifikat": "172/KAL/2024",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "ab4aba66-0c46-44d7-b869-303f91fb79a7",
+    "fields": {
+      "instrument": "77a82581-a0ea-4791-b138-eb0748a15461",
+      "nomor_sertifikat": "172/KAL/2024-2",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "a40fc873-e047-4e71-a21a-7fe4fffdddaa",
+    "fields": {
+      "instrument": "9e419d70-5d9f-444b-ac4e-9302696db24b",
+      "nomor_sertifikat": "172/KAL/2024-3",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "ca2a1a45-d218-4d44-b751-3b05a4d6667b",
+    "fields": {
+      "instrument": "e51ea24b-a679-40cc-8290-635495459f60",
+      "nomor_sertifikat": "171/KAL/2024",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "2c32c912-e9be-4f85-bf7c-70702498a3d0",
+    "fields": {
+      "instrument": "89ebc361-20c5-4268-8bb2-5ad37c1b8156",
+      "nomor_sertifikat": "171/KAL/2024-2",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "eb0c051a-7580-4ba8-978a-d34b4aab7c1f",
+    "fields": {
+      "instrument": "c3804f7f-3ea1-4f6a-b7e3-3125bb02cc46",
+      "nomor_sertifikat": "171/KAL/2024-3",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "d5e122bc-0488-4dc7-bb7a-79b7a3dcceda",
+    "fields": {
+      "instrument": "f1b94002-78d6-4248-b07f-2e82adc22ad0",
+      "nomor_sertifikat": "171/KAL/2024-4",
+      "tanggal_kalibrasi": "2024-08-21",
+      "tanggal_berlaku": "2027-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "459bfa79-e87f-48a6-89d3-73b70db03964",
+    "fields": {
+      "instrument": "d2e7f8d7-8a0b-48f4-9b28-113b29c45673",
+      "nomor_sertifikat": "KALX62509925103R",
+      "tanggal_kalibrasi": "2025-11-24",
+      "tanggal_berlaku": "2026-11-24",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "eee6f4e8-4e3e-42db-a878-3b3372d49ba6",
+    "fields": {
+      "instrument": "9cee0eb3-3178-40f2-ad47-eb8db0316437",
+      "nomor_sertifikat": "286/KAL/2024",
+      "tanggal_kalibrasi": "2024-11-07",
+      "tanggal_berlaku": "2025-11-07",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "a9e69849-03e3-48bb-bf7e-81d127b1d91d",
+    "fields": {
+      "instrument": "34cc2f09-d076-4af5-90cf-14dcee6d7692",
+      "nomor_sertifikat": "127/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "c874d879-9661-45da-aafa-bc6bc521cd5d",
+    "fields": {
+      "instrument": "3bc1b12c-3265-4d6a-8a2f-1a050f0853b7",
+      "nomor_sertifikat": "KALX62509025115R",
+      "tanggal_kalibrasi": "2025-11-25",
+      "tanggal_berlaku": "2025-11-28",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "9d3ed136-8b95-481a-b169-d6df44612fe4",
+    "fields": {
+      "instrument": "aed20674-ea7f-4a20-b451-5b6cfbbf6c96",
+      "nomor_sertifikat": "KALX62509725104R",
+      "tanggal_kalibrasi": "2025-11-25",
+      "tanggal_berlaku": "2025-11-28",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "7fc37625-ea7a-453a-bc5d-67ff543aee34",
+    "fields": {
+      "instrument": "6e2f2fec-1164-44b5-809c-aef2ef14a0b5",
+      "nomor_sertifikat": "096/KAL/2024",
+      "tanggal_kalibrasi": "2024-06-06",
+      "tanggal_berlaku": "2025-06-27",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "d597e418-1359-4fe0-a0c8-48dbbc2227a6",
+    "fields": {
+      "instrument": "1e35faae-6b05-4fe3-8680-60cc6c7cc5da",
+      "nomor_sertifikat": "119/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "cc002817-458b-46e2-af59-274848c8bbd9",
+    "fields": {
+      "instrument": "c1fa4799-d082-4d6f-9e8a-cd141aaedac0",
+      "nomor_sertifikat": "128/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "b7aab7ed-4bb0-4a84-8c7d-37b7d7cfa03a",
+    "fields": {
+      "instrument": "19bd20a1-99eb-4253-b8d0-dee6d679194e",
+      "nomor_sertifikat": "125/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "0048db25-1c02-4323-b816-cde91dac78e0",
+    "fields": {
+      "instrument": "8226233b-b5e2-4157-8a87-038b59268d27",
+      "nomor_sertifikat": "017/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-21",
+      "tanggal_berlaku": "2027-02-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "f809841e-6856-4b1b-9e07-bb1ce6e7d79f",
+    "fields": {
+      "instrument": "288644d2-2bc0-4ddd-913c-5ecfd5177808",
+      "nomor_sertifikat": "124/KAL/2023",
+      "tanggal_kalibrasi": "2023-03-14",
+      "tanggal_berlaku": "2026-03-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "238f8f9f-876e-4f5e-b85d-4152a624246f",
+    "fields": {
+      "instrument": "08f3e8b7-17e8-4e4b-bc02-e07462bd9db3",
+      "nomor_sertifikat": "123/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "534709c5-5736-43be-81da-94cd6757b4c5",
+    "fields": {
+      "instrument": "9609f985-147c-4e7e-9d53-6e6e905a3dc4",
+      "nomor_sertifikat": "120/KAL/2023",
+      "tanggal_kalibrasi": "2023-09-14",
+      "tanggal_berlaku": "2024-09-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "a4423636-3f14-48e0-a346-26d9797c07ef",
+    "fields": {
+      "instrument": "dc1fbb52-dfd7-4a01-9938-ec6763de76dd",
+      "nomor_sertifikat": "016/KAL/2024",
+      "tanggal_kalibrasi": "2024-02-19",
+      "tanggal_berlaku": "2027-02-19",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "6d48f279-2895-4021-b45f-ebba4cc78b01",
+    "fields": {
+      "instrument": "8c49fa7b-9b9f-48e2-aa61-79506e7abc8a",
+      "nomor_sertifikat": "015/KAL/2025",
+      "tanggal_kalibrasi": "2025-04-25",
+      "tanggal_berlaku": "2026-04-25",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "54fbe057-6daa-42e3-aeee-2f65c4c75b57",
+    "fields": {
+      "instrument": "3fb3a9f9-a26d-44d4-bfe5-a9a462de9351",
+      "nomor_sertifikat": "KALX62501525032R",
+      "tanggal_kalibrasi": "2025-08-21",
+      "tanggal_berlaku": "2026-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "c1bcdcd5-82ec-4327-b780-d97877bfe273",
+    "fields": {
+      "instrument": "4e8d11a5-87d7-4f93-b1c4-483a53a6edc1",
+      "nomor_sertifikat": "KALX62509525106R",
+      "tanggal_kalibrasi": "2025-11-17",
+      "tanggal_berlaku": "2026-11-17",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "1b271ca6-81a8-4d7a-8804-1bad600d4384",
+    "fields": {
+      "instrument": "3cfa996d-9205-4d2c-95e2-9837914fb0f8",
+      "nomor_sertifikat": "KALX62501825038R",
+      "tanggal_kalibrasi": "2025-08-15",
+      "tanggal_berlaku": "2026-08-15",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "11f29ef8-f152-4cb7-9b93-56cdd30f48eb",
+    "fields": {
+      "instrument": "e67044eb-6ba7-445f-8bc2-917dafe9ecfa",
+      "nomor_sertifikat": "KALX62501725033R",
+      "tanggal_kalibrasi": "2025-08-15",
+      "tanggal_berlaku": "2026-08-15",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "5d44b958-ce50-45a1-b6b9-c31deb18a997",
+    "fields": {
+      "instrument": "c161b739-ee1c-4fef-8896-a7847cbf8927",
+      "nomor_sertifikat": "083/KAL/2025",
+      "tanggal_kalibrasi": "2025-06-10",
+      "tanggal_berlaku": "2026-06-10",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "94d95277-263a-4cfb-bc45-f50afaa8dba6",
+    "fields": {
+      "instrument": "777633e6-d6ab-4a87-9260-fa206c0def6f",
+      "nomor_sertifikat": "KALX62509882 5109R",
+      "tanggal_kalibrasi": "2025-11-19",
+      "tanggal_berlaku": "2026-11-19",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "8005a9d5-6109-4e6c-97b1-2672dada33b6",
+    "fields": {
+      "instrument": "f88bff98-4b61-4c8b-8a73-0acb63c15ff6",
+      "nomor_sertifikat": "233/KAL/2024",
+      "tanggal_kalibrasi": "2024-10-14",
+      "tanggal_berlaku": "2027-10-14",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "c514ce22-a5be-4a5e-929a-00265664abf6",
+    "fields": {
+      "instrument": "b6755d68-76f5-4983-8f5b-ab703fb76b66",
+      "nomor_sertifikat": "004/KAL/2023",
+      "tanggal_kalibrasi": "2023-03-27",
+      "tanggal_berlaku": "2026-03-26",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "c186f161-4f54-436f-abae-947063ccd459",
+    "fields": {
+      "instrument": "6773e7ca-f841-4c6f-b2a5-4413b00415af",
+      "nomor_sertifikat": "KALX62501225036R",
+      "tanggal_kalibrasi": "2025-09-03",
+      "tanggal_berlaku": "2026-09-03",
+      "laboratorium": "Lab Kalibrasi Sentral",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "35d11a62-a495-4e6a-9aac-2f4d655371b0",
+    "fields": {
+      "instrument": "baab7af1-7888-4e40-83fa-e1ba7b5f7660",
+      "nomor_sertifikat": "KALX62501325037R",
+      "tanggal_kalibrasi": "2025-08-27",
+      "tanggal_berlaku": "2026-08-27",
+      "laboratorium": "Lab Kalibrasi Sentral",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "98d399dc-53d4-48f0-b2c9-3a87f569b43b",
+    "fields": {
+      "instrument": "b9f702fb-4830-4774-8eee-00165378f87c",
+      "nomor_sertifikat": "078/KAL/2025",
+      "tanggal_kalibrasi": "2025-06-11",
+      "tanggal_berlaku": "2026-06-11",
+      "laboratorium": "Lab Kalibrasi Sentral",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "4b454916-a816-4770-9e23-e3e1b079f615",
+    "fields": {
+      "instrument": "3507865e-50da-4149-973b-d42c03a453c1",
+      "nomor_sertifikat": "016/KAL/2025",
+      "tanggal_kalibrasi": "2025-03-20",
+      "tanggal_berlaku": "2026-03-26",
+      "laboratorium": "Lab Kalibrasi Sentral",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "8dd06b8b-f051-434c-be12-c4b4264429d6",
+    "fields": {
+      "instrument": "5e83f022-d782-459d-9010-49b1175a3cb0",
+      "nomor_sertifikat": "KALX62501025110R",
+      "tanggal_kalibrasi": "2025-11-17",
+      "tanggal_berlaku": "2026-11-17",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "a3f72531-0e4e-4072-bcfe-9b8af64d8cc3",
+    "fields": {
+      "instrument": "a96e6226-f4b9-45ca-bed4-54df72796753",
+      "nomor_sertifikat": "KALX62501425034R",
+      "tanggal_kalibrasi": "2025-08-21",
+      "tanggal_berlaku": "2026-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "5132dfab-aa0e-4a8d-801d-95d2c42b314e",
+    "fields": {
+      "instrument": "842749bb-8aa7-41ab-b9d6-c9ef0f644471",
+      "nomor_sertifikat": "KALX62501625035R",
+      "tanggal_kalibrasi": "2025-08-21",
+      "tanggal_berlaku": "2026-08-21",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  },
+  {
+    "model": "certificates.certificate",
+    "pk": "2d06cf02-597c-42dc-b870-9566e8207048",
+    "fields": {
+      "instrument": "b0aeb9b3-4068-41dd-900f-e4c974385925",
+      "nomor_sertifikat": "081/KAL/2025",
+      "tanggal_kalibrasi": "2025-06-10",
+      "tanggal_berlaku": "2026-06-10",
+      "laboratorium": "Lab Kalibrasi Internal",
+      "teknisi": "",
+      "penanggung_jawab": "",
+      "is_active": true,
+      "created_at": "2026-04-27T10:02:52+07:00",
+      "updated_at": "2026-04-27T10:02:52+07:00"
+    }
+  }
+]

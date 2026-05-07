@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registrasi{% endblock %}
+
+{% block anon_content %}
+<div class="auth-page">
+    <div class="auth-container animate-fade-in">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <i class="bi bi-person-plus-fill"></i>
+                <h2>Buat Akun Baru</h2>
+                <p>Daftar untuk mengakses sertifikat kalibrasi</p>
+            </div>
+
+            <form method="post" id="register-form">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label for="id_nama_lengkap" class="form-label">Nama Lengkap</label>
+                    {{ form.nama_lengkap }}
+                    {% if form.nama_lengkap.errors %}
+                    <div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.nama_lengkap.errors.0 }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_username" class="form-label">Username</label>
+                    {{ form.username }}
+                    {% if form.username.errors %}
+                    <div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.username.errors.0 }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_email" class="form-label">Email</label>
+                    {{ form.email }}
+                    {% if form.email.errors %}
+                    <div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.email.errors.0 }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="id_instansi" class="form-label">Instansi</label>
+                        {{ form.instansi }}
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="id_no_telp" class="form-label">No. Telepon</label>
+                        {{ form.no_telp }}
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="id_password1" class="form-label">Password</label>
+                    {{ form.password1 }}
+                    {% if form.password1.errors %}
+                    <div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.password1.errors.0 }}</div>
+                    {% endif %}
+                </div>
+
+                <div class="mb-4">
+                    <label for="id_password2" class="form-label">Konfirmasi Password</label>
+                    {{ form.password2 }}
+                    {% if form.password2.errors %}
+                    <div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.password2.errors.0 }}</div>
+                    {% endif %}
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-3" id="register-btn">
+                    <i class="bi bi-person-plus"></i> Daftar
+                </button>
+
+                <p class="text-center" style="color: var(--text-secondary); font-size: 0.85rem;">
+                    Sudah punya akun?
+                    <a href="{% url 'login' %}" style="font-weight: 600;">Masuk di sini</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

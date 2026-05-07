@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}Cetak QR - {{ instrument.nomor_aset|default:"-" }} - {{ instrument.nama_alat }}{% endblock %}
+{% block page_title %}Cetak QR Code{% endblock %}
+
+{% block topbar_actions %}
+<button onclick="printQR()" class="btn btn-primary btn-sm no-print">
+    <i class="bi bi-printer"></i> Cetak
+</button>
+{% endblock %}
+
+{% block content %}
+<div class="qr-print-container">
+    <div class="qr-print-card">
+        {% if instrument.qr_code %}
+        <img src="{{ instrument.qr_code.url }}" alt="QR Code" style="width: 200px; height: 200px;">
+        {% else %}
+        <div style="width: 200px; height: 200px; display: flex; align-items: center; justify-content: center; background: #f0f0f0; margin: 0 auto;">
+            <span>No QR</span>
+        </div>
+        {% endif %}
+        <h4>{{ instrument.nomor_aset|default:"-" }} - {{ instrument.nama_alat }}</h4>
+        <p>{{ instrument.nomor_seri }}</p>
+        {% if instrument.merk %}<p>{{ instrument.merk }} {{ instrument.model_tipe }}</p>{% endif %}
+        <p style="font-size: 0.7rem; color: #999; margin-top: 12px;">
+            Scan QR code untuk melihat sertifikat kalibrasi
+        </p>
+    </div>
+
+    <div class="mt-4 no-print">
+        <a href="{% url 'instrument_detail' instrument.id %}" class="btn btn-glass">
+            <i class="bi bi-arrow-left"></i> Kembali
+        </a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Admin Flow" id="0">
+    <mxGraphModel dx="1212" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m_start" parent="1" style="ellipse;html=1;" value="Mulai Monitoring" vertex="1">
+          <mxGeometry height="50" width="140" x="150" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="m_akses" parent="1" style="rounded=0;html=1;" value="Akses Halaman Monitoring" vertex="1">
+          <mxGeometry height="60" width="180" x="130" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="m_query" parent="1" style="rounded=0;html=1;" value="Query 100 Log Terbaru" vertex="1">
+          <mxGeometry height="60" width="180" x="130" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="m_show" parent="1" style="rounded=0;html=1;" value="Tampilkan Tabel Log" vertex="1">
+          <mxGeometry height="60" width="180" x="130" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="m_end" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="160" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-1" edge="1" parent="1" source="m_start" target="m_akses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-2" edge="1" parent="1" source="m_akses" target="m_query">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-3" edge="1" parent="1" source="m_query" target="m_show">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-4" edge="1" parent="1" source="m_show" target="m_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n_start" parent="1" style="ellipse;html=1;" value="Mulai Notifikasi" vertex="1">
+          <mxGeometry height="50" width="140" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n_click" parent="1" style="rounded=0;html=1;" value="Klik Kirim Notifikasi" vertex="1">
+          <mxGeometry height="60" width="180" x="380" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="n_query" parent="1" style="rounded=0;html=1;" value="Query Sertifikat Expiring ≤ 7 hari" vertex="1">
+          <mxGeometry height="60" width="220" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="n_check" parent="1" style="rhombus;html=1;" value="Ada yang Expired?" vertex="1">
+          <mxGeometry height="80" width="140" x="400" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="n_loop" parent="1" style="rounded=0;html=1;" value="Loop &amp; Kirim Email" vertex="1">
+          <mxGeometry height="60" width="180" x="320" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="n_succ" parent="1" style="rounded=0;html=1;" value="X Notifikasi Terkirim" vertex="1">
+          <mxGeometry height="60" width="180" x="320" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="n_zero" parent="1" style="rounded=0;html=1;" value="0 Notifikasi Terkirim" vertex="1">
+          <mxGeometry height="60" width="180" x="520" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="n_dash" parent="1" style="rounded=0;html=1;" value="Redirect ke Dashboard" vertex="1">
+          <mxGeometry height="60" width="180" x="400" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="n_end" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="430" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-5" edge="1" parent="1" source="n_start" target="n_click">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-6" edge="1" parent="1" source="n_click" target="n_query">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-7" edge="1" parent="1" source="n_query" target="n_check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-8" edge="1" parent="1" source="n_check" target="n_loop" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-9" edge="1" parent="1" source="n_loop" target="n_succ">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-10" edge="1" parent="1" source="n_check" target="n_zero" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-11" edge="1" parent="1" source="n_succ" target="n_dash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-12" edge="1" parent="1" source="n_zero" target="n_dash">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-13" edge="1" parent="1" source="n_dash" target="n_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="u_start" parent="1" style="ellipse;html=1;" value="Mulai Kelola User" vertex="1">
+          <mxGeometry height="50" width="160" x="760" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="u_akses" parent="1" style="rounded=0;html=1;" value="Akses Manajemen Pengguna" vertex="1">
+          <mxGeometry height="60" width="200" x="740" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="u_show" parent="1" style="rounded=0;html=1;" value="Tampilkan UserProfile" vertex="1">
+          <mxGeometry height="60" width="200" x="740" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="u_check" parent="1" style="rhombus;html=1;" value="Klik Unblock?" vertex="1">
+          <mxGeometry height="80" width="160" x="760" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="u_do" parent="1" style="rounded=0;html=1;" value="Reset failed_attempts &amp; unblock" vertex="1">
+          <mxGeometry height="60" width="220" x="730" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="u_msg" parent="1" style="rounded=0;html=1;" value="Pesan User Di-unblock" vertex="1">
+          <mxGeometry height="60" width="220" x="730" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="u_end" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="780" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-14" edge="1" parent="1" source="u_start" target="u_akses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-15" edge="1" parent="1" source="u_akses" target="u_show">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-16" edge="1" parent="1" source="u_show" target="u_check">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-17" edge="1" parent="1" source="u_check" target="u_do" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-18" edge="1" parent="1" source="u_do" target="u_msg">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-19" edge="1" parent="1" source="u_msg" target="u_end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SLRVXznjaa6BM9hUFb1i-20" edge="1" parent="1" source="u_check" target="u_end" value="Tidak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="990" y="300" />
+              <mxPoint x="990" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

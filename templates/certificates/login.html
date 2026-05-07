@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+
+{% block anon_content %}
+<div class="auth-page">
+    <div class="auth-container animate-fade-in">
+        <div class="auth-card">
+            <div class="auth-logo">
+                <i class="bi bi-qr-code-scan"></i>
+                <h2>QR CalibHub</h2>
+                <p>Sistem Manajemen Sertifikat Kalibrasi<br><small>Manajemen Internal</small></p>
+            </div>
+
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-{{ message.tags }} glass-alert mb-3" role="alert">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
+
+            <form method="post" id="login-form">
+                {% csrf_token %}
+
+                <div class="mb-3">
+                    <label for="id_username" class="form-label">
+                        <i class="bi bi-person"></i> Username
+                    </label>
+                    {{ form.username }}
+                </div>
+
+                <div class="mb-4">
+                    <label for="id_password" class="form-label">
+                        <i class="bi bi-lock"></i> Password
+                    </label>
+                    {{ form.password }}
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 py-2 mb-3" id="login-btn">
+                    <i class="bi bi-box-arrow-in-right"></i> Masuk
+                </button>
+
+                <p class="text-center" style="color: var(--text-secondary); font-size: 0.85rem;">
+                    Belum punya akun?
+                    <a href="{% url 'register' %}" style="font-weight: 600;">Daftar di sini</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

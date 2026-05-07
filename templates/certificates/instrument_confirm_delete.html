@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Hapus: {{ instrument.nomor_aset|default:"-" }} - {{ instrument.nama_alat }}{% endblock %}
+{% block page_title %}Konfirmasi Hapus{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <div class="glass-card" data-animate>
+                <div class="card-body text-center py-5">
+                    <i class="bi bi-exclamation-triangle" style="font-size: 4rem; color: var(--danger);"></i>
+                    <h4 class="mt-3 mb-2">Hapus Alat?</h4>
+                    <p style="color: var(--text-secondary);">
+                        Apakah Anda yakin ingin menghapus alat <strong>{{ instrument.nomor_aset|default:"-" }} - {{ instrument.nama_alat }}</strong> (SN: {{ instrument.nomor_seri }})?<br>
+                        <span class="text-danger">Semua sertifikat yang terkait juga akan dihapus!</span>
+                    </p>
+
+                    <form method="post" class="mt-4">
+                        {% csrf_token %}
+                        <div class="d-flex gap-2 justify-content-center">
+                            <a href="{% url 'instrument_detail' instrument.id %}" class="btn btn-glass">
+                                <i class="bi bi-x-lg"></i> Batal
+                            </a>
+                            <button type="submit" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Ya, Hapus
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

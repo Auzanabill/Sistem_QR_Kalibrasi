@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Kelola User{% endblock %}
+{% block page_title %}Kelola Pengguna{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    {% if profiles %}
+    <div class="glass-card" data-animate>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="glass-table">
+                    <thead>
+                        <tr>
+                            <th>Username</th>
+                            <th>Nama Lengkap</th>
+                            <th>Instansi</th>
+                            <th>Role</th>
+                            <th>Status</th>
+                            <th>Gagal Login</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for profile in profiles %}
+                        <tr>
+                            <td><strong>{{ profile.user.username }}</strong></td>
+                            <td>{{ profile.nama_lengkap }}</td>
+                            <td>{{ profile.instansi|default:"-" }}</td>
+                            <td>
+                                {% if profile.role == 'admin' %}
+                                <span class="badge bg-primary" style="font-size: 0.75rem;">Admin</span>
+                                {% else %}
+                                <span class="badge bg-secondary" style="font-size: 0.75rem;">Scanner</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if profile.is_blocked %}
+                                <span class="badge-status badge-expired">Diblokir</span>
+                                {% else %}
+                                <span class="badge-status badge-valid">Aktif</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if profile.failed_attempts > 0 %}
+                                <span style="color: var(--danger); font-weight: 600;">{{ profile.failed_attempts }}x</span>
+                                {% else %}
+                                <span style="color: var(--text-muted);">0</span>
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if profile.is_blocked %}
+                                <a href="{% url 'unblock_user' profile.user.id %}" class="btn btn-sm"
+                                   style="background: rgba(0, 230, 118, 0.15); color: var(--success); border: 1px solid rgba(0, 230, 118, 0.3); border-radius: 8px;">
+                                    <i class="bi bi-unlock"></i> Unblock
+                                </a>
+                                {% else %}
+                                <span style="color: var(--text-muted); font-size: 0.8rem;">-</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="glass-card">
+        <div class="empty-state">
+            <i class="bi bi-people"></i>
+            <h4>Belum Ada User</h4>
+            <p>User akan muncul setelah ada yang mendaftar.</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

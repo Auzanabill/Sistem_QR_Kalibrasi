@@ -1,0 +1,198 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Manajemen Sertifikat" id="0">
+    <mxGraphModel dx="1030" dy="562" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="50" width="120" x="430" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="akses" parent="1" style="rounded=0;html=1;" value="Akses Halaman&amp;nbsp;&lt;div&gt;Daftar Sertifikat&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="420" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="choose" parent="1" style="rhombus;html=1;" value="Pilih Aksi?" vertex="1">
+          <mxGeometry height="80" width="140" x="420" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="formTambah" parent="1" style="rounded=0;html=1;" value="Form Tambah Sertifikat" vertex="1">
+          <mxGeometry height="60" width="140" x="190" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="input" parent="1" style="shape=parallelogram;html=1;" value="Isi Data &amp; Upload PDF" vertex="1">
+          <mxGeometry height="60" width="170" x="175" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="rhombus;html=1;" value="Valid?" vertex="1">
+          <mxGeometry height="80" width="105" x="207.5" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="rounded=0;html=1;" value="Tampilkan Error" vertex="1">
+          <mxGeometry height="60" width="110" x="50" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="saveDB" parent="1" style="rounded=0;html=1;" value="Simpan Database" vertex="1">
+          <mxGeometry height="60" width="110" x="205" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="detail" parent="1" style="rounded=0;html=1;" value="Detail + Log" vertex="1">
+          <mxGeometry height="60" width="100" x="440" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="subact" parent="1" style="rhombus;html=1;" value="Sub Aksi?" vertex="1">
+          <mxGeometry height="80" width="110" x="435" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="editForm" parent="1" style="rounded=0;html=1;" value="Form Edit" vertex="1">
+          <mxGeometry height="60" width="90" x="370" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="saveEdit" parent="1" style="rounded=0;html=1;" value="Simpan&amp;nbsp;&lt;div&gt;Perubahan&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="365" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="confirm" parent="1" style="rounded=0;html=1;" value="Konfirmasi Hapus" vertex="1">
+          <mxGeometry height="60" width="110" x="500" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="checkDel" parent="1" style="rhombus;html=1;" value="Yakin?" vertex="1">
+          <mxGeometry height="80" width="110" x="500" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="delete" parent="1" style="rounded=0;html=1;" value="Hapus Data" vertex="1">
+          <mxGeometry height="60" width="85" x="512.5" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="checkPDF" parent="1" style="rhombus;html=1;" value="File PDF Ada?" vertex="1">
+          <mxGeometry height="80" width="100" x="680" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="servePDF" parent="1" style="rounded=0;html=1;" value="Serve PDF + Log" vertex="1">
+          <mxGeometry height="60" width="110" x="675" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="errPDF" parent="1" style="rounded=0;html=1;" value="Error PDF" vertex="1">
+          <mxGeometry height="60" width="80" x="690" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="search" parent="1" style="rounded=0;html=1;" value="Filter / Cari" vertex="1">
+          <mxGeometry height="60" width="80" x="690" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="result" parent="1" style="rounded=0;html=1;" value="Tampilkan Hasil" vertex="1">
+          <mxGeometry height="60" width="90" x="800" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="670" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-1" edge="1" parent="1" source="start" target="akses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-2" edge="1" parent="1" source="akses" target="choose">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-3" edge="1" parent="1" source="choose" target="formTambah" value="Tambah Baru">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-4" edge="1" parent="1" source="choose" target="detail" value="Lihat Detail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-5" edge="1" parent="1" source="choose" target="search" value="Filter/Cari">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-6" edge="1" parent="1" source="formTambah" style="entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="input">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-7" edge="1" parent="1" source="input" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-8" edge="1" parent="1" source="valid" target="error" value="Tidak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="105" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-9" edge="1" parent="1" source="error" style="entryX=0.1;entryY=0.47;entryDx=0;entryDy=0;entryPerimeter=0;" target="input">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="105" y="428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-10" edge="1" parent="1" source="valid" target="saveDB" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-11" edge="1" parent="1" source="detail" target="subact">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-12" edge="1" parent="1" source="subact" target="editForm" value="Edit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-13" edge="1" parent="1" source="editForm" target="saveEdit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-14" edge="1" parent="1" source="saveEdit" target="detail">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="650" />
+              <mxPoint x="350" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-15" edge="1" parent="1" source="subact" target="confirm" value="Hapus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-16" edge="1" parent="1" source="confirm" target="checkDel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-17" edge="1" parent="1" source="checkDel" target="delete" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-18" edge="1" parent="1" source="delete" target="akses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="660" y="760" />
+              <mxPoint x="660" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-19" edge="1" parent="1" source="subact" target="checkPDF" value="Download PDF">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-20" edge="1" parent="1" source="checkPDF" target="servePDF" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-21" edge="1" parent="1" source="checkPDF" target="errPDF" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-22" edge="1" parent="1" source="errPDF" target="detail">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-23" edge="1" parent="1" source="search" target="result">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-24" edge="1" parent="1" source="saveDB" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-25" edge="1" parent="1" source="servePDF" style="exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aQbpHNPITsysD0s5MjVl-26" edge="1" parent="1" source="result" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="825" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQvfIiBuf0zm3pQ0th85-7" edge="1" parent="1" source="checkDel" style="exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="confirm" value="Tidak">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="650" />
+              <mxPoint x="640" y="550" />
+            </Array>
+            <mxPoint x="740" y="550" as="sourcePoint" />
+            <mxPoint x="740" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OQvfIiBuf0zm3pQ0th85-8" edge="1" parent="1" source="saveEdit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="saveEdit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

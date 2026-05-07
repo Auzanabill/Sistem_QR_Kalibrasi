@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Flow Registrasi" id="0">
+    <mxGraphModel dx="1212" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="ellipse;html=1;" value="Mulai" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="akses" parent="1" style="rounded=0;html=1;" value="Akses Halaman Registrasi" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="checkLogin" parent="1" style="rhombus;html=1;" value="Sudah Login?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="redirDash" parent="1" style="rounded=0;html=1;" value="Redirect ke Dashboard" vertex="1">
+          <mxGeometry height="60" width="140" x="480" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="form" parent="1" style="shape=parallelogram;html=1;" value="Tampilkan Form&amp;nbsp;&lt;div&gt;Registrasi&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="submit" parent="1" style="rounded=0;html=1;" value="Isi Form &amp; Submit" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="valid" parent="1" style="rhombus;html=1;" value="Form Valid?" vertex="1">
+          <mxGeometry height="80" width="140" x="290" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="error" parent="1" style="rounded=0;html=1;" value="Pesan Error Validasi" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="createUser" parent="1" style="rounded=0;html=1;" value="Buat User Django Auth" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="createProfile" parent="1" style="rounded=0;html=1;" value="Buat UserProfile (scanner)" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="autoLogin" parent="1" style="rounded=0;html=1;" value="Auto Login + Sukses" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="redirDash2" parent="1" style="rounded=0;html=1;" value="Redirect ke Dashboard" vertex="1">
+          <mxGeometry height="60" width="180" x="270" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="ellipse;html=1;" value="Selesai" vertex="1">
+          <mxGeometry height="50" width="120" x="300" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-1" edge="1" parent="1" source="start" target="akses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-2" edge="1" parent="1" source="akses" target="checkLogin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-3" edge="1" parent="1" source="checkLogin" target="redirDash" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-4" edge="1" parent="1" source="checkLogin" target="form" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-5" edge="1" parent="1" source="form" target="submit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-6" edge="1" parent="1" source="submit" target="valid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-7" edge="1" parent="1" source="valid" target="error" value="Tidak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-8" edge="1" parent="1" source="error" style="entryX=0.103;entryY=0.482;entryDx=0;entryDy=0;entryPerimeter=0;" target="form">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="350" />
+            </Array>
+            <mxPoint x="270" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-9" edge="1" parent="1" source="valid" target="createUser" value="Ya">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-10" edge="1" parent="1" source="createUser" target="createProfile">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-11" edge="1" parent="1" source="createProfile" target="autoLogin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-12" edge="1" parent="1" source="autoLogin" target="redirDash2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-13" edge="1" parent="1" source="redirDash" target="end">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="550" y="975" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fx_eJEKRUu1AM-pfqcsq-14" edge="1" parent="1" source="redirDash2" target="end">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="glass-card" data-animate>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data" id="certificate-form">
+                        {% csrf_token %}
+
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <label class="form-label">Alat/Instrumen *</label>
+                                {{ form.instrument }}
+                                {% if form.instrument.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.instrument.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Nomor Sertifikat *</label>
+                                {{ form.nomor_sertifikat }}
+                                {% if form.nomor_sertifikat.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.nomor_sertifikat.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Tanggal Kalibrasi *</label>
+                                {{ form.tanggal_kalibrasi }}
+                                {% if form.tanggal_kalibrasi.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.tanggal_kalibrasi.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Berlaku Hingga *</label>
+                                {{ form.tanggal_berlaku }}
+                                {% if form.tanggal_berlaku.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.tanggal_berlaku.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Laboratorium *</label>
+                                {{ form.laboratorium }}
+                                {% if form.laboratorium.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.laboratorium.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Teknisi</label>
+                                {{ form.teknisi }}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Penanggung Jawab</label>
+                                {{ form.penanggung_jawab }}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">File Sertifikat (PDF)</label>
+                                {{ form.file_sertifikat }}
+                                {% if certificate and certificate.file_sertifikat %}
+                                <div class="mt-1" style="font-size: 0.8rem; color: var(--text-secondary);">
+                                    <i class="bi bi-file-pdf"></i> File saat ini: {{ certificate.file_sertifikat.name }}
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    {{ form.is_active }}
+                                    <label class="form-check-label" for="id_is_active">Aktif</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-lg"></i> Simpan
+                            </button>
+                            <a href="{% url 'certificate_list' %}" class="btn btn-glass">Batal</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

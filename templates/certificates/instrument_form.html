@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block page_title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid px-0">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="glass-card" data-animate>
+                <div class="card-body">
+                    <form method="post" id="instrument-form">
+                        {% csrf_token %}
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nama Alat *</label>
+                                {{ form.nama_alat }}
+                                {% if form.nama_alat.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.nama_alat.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nomor Seri *</label>
+                                {{ form.nomor_seri }}
+                                {% if form.nomor_seri.errors %}<div class="text-danger mt-1" style="font-size: 0.8rem;">{{ form.nomor_seri.errors.0 }}</div>{% endif %}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Merk/Brand</label>
+                                {{ form.merk }}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Model/Tipe</label>
+                                {{ form.model_tipe }}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Pemilik/Instansi</label>
+                                {{ form.pemilik }}
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Lokasi</label>
+                                {{ form.lokasi }}
+                            </div>
+                            <div class="col-12">
+                                <label class="form-label">Deskripsi</label>
+                                {{ form.deskripsi }}
+                            </div>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-4">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-lg"></i> Simpan
+                            </button>
+                            <a href="{% url 'instrument_list' %}" class="btn btn-glass">Batal</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
